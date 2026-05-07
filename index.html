@@ -1,13 +1,76 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Argha CV</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Argha Prasad CV</title>
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      background:#0f172a;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      min-height:100vh;
+      padding:20px;
+      font-family:Arial, sans-serif;
+    }
+
+    .cv-container{
+      width:100%;
+      max-width:1200px;
+      background:white;
+      border-radius:18px;
+      overflow:hidden;
+      box-shadow:0 10px 40px rgba(0,0,0,0.3);
+    }
+
+    .cv-container img{
+      width:100%;
+      height:auto;
+      display:block;
+      object-fit:contain;
+    }
+
+    @media(max-width:768px){
+
+      body{
+        padding:0;
+        background:white;
+      }
+
+      .cv-container{
+        border-radius:0;
+        max-width:100%;
+        min-height:100vh;
+        box-shadow:none;
+      }
+
+      .cv-container img{
+        width:100%;
+        height:auto;
+      }
+
+    }
+
+  </style>
 </head>
+
 <body>
 
-  <h1>Hello Argha 🚀</h1>
+  <div class="cv-container">
 
-  <img src="20260507_202716_0000.png" width="300">
+    <img src="20260507_202716_0000.png" alt="Argha CV">
+
+  </div>
 
 </body>
 </html>
