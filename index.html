@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Argha Prasad CV</title>
 
@@ -15,53 +16,77 @@
     }
 
     body{
-      background:#0f172a;
+
+      min-height:100vh;
+
       display:flex;
       justify-content:center;
       align-items:center;
-      min-height:100vh;
-      padding:20px;
+
+      padding:25px;
+
       font-family:Arial, sans-serif;
+
+      background:linear-gradient(
+      135deg,
+      #dbe7e7,
+      #cfe0e0,
+      #dfeeee
+      );
+
     }
 
     .cv-container{
+
       width:100%;
       max-width:1200px;
-      background:white;
-      border-radius:18px;
+
+      background:#ffffff;
+
+      border-radius:22px;
+
       overflow:hidden;
-      box-shadow:0 10px 40px rgba(0,0,0,0.3);
+
+      box-shadow:
+      0 10px 30px rgba(0,0,0,0.12),
+      0 0 80px rgba(0,0,0,0.05);
+
+      transition:0.3s;
+
+    }
+
+    .cv-container:hover{
+
+      transform:translateY(-3px);
+
     }
 
     .cv-container img{
+
       width:100%;
-      height:auto;
       display:block;
       object-fit:contain;
+
     }
 
     @media(max-width:768px){
 
       body{
-        padding:0;
-        background:white;
+
+        padding:12px;
+
       }
 
       .cv-container{
-        border-radius:0;
-        max-width:100%;
-        min-height:100vh;
-        box-shadow:none;
-      }
 
-      .cv-container img{
-        width:100%;
-        height:auto;
+        border-radius:18px;
+
       }
 
     }
 
   </style>
+
 </head>
 
 <body>
@@ -73,4 +98,5 @@
   </div>
 
 </body>
+
 </html>
