@@ -1,102 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Argha Portfolio</title>
 
-  <title>Argha Prasad CV</title>
-
-  <style>
-
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-    }
-
-    body{
-
-      min-height:100vh;
-
-      display:flex;
-      justify-content:center;
-      align-items:center;
-
-      padding:25px;
-
-      font-family:Arial, sans-serif;
-
-      background:linear-gradient(
-      135deg,
-      #dbe7e7,
-      #cfe0e0,
-      #dfeeee
-      );
-
-    }
-
-    .cv-container{
-
-      width:100%;
-      max-width:1200px;
-
-      background:#ffffff;
-
-      border-radius:22px;
-
-      overflow:hidden;
-
-      box-shadow:
-      0 10px 30px rgba(0,0,0,0.12),
-      0 0 80px rgba(0,0,0,0.05);
-
-      transition:0.3s;
-
-    }
-
-    .cv-container:hover{
-
-      transform:translateY(-3px);
-
-    }
-
-    .cv-container img{
-
-      width:100%;
-      display:block;
-      object-fit:contain;
-
-    }
-
-    @media(max-width:768px){
-
-      body{
-
-        padding:12px;
-
-      }
-
-      .cv-container{
-
-        border-radius:18px;
-
-      }
-
-    }
-
-  </style>
-
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-  <div class="cv-container">
+  <header>
+    <nav>
+      <h2 class="logo">Argha.</h2>
 
-    <img src="20260507_202716_0000.png" alt="Argha CV">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-  </div>
+  <section class="hero" id="home">
+
+    <div class="hero-text">
+      <h1>Hello, I'm <span>Argha</span></h1>
+
+      <p>
+        Diploma Computer Engineering Student & Beginner Trader
+      </p>
+
+      <button>Hire Me</button>
+    </div>
+
+    <div class="hero-image">
+      <img src="images/profile.jpg" alt="profile">
+    </div>
+
+  </section>
+
+  <section id="about" class="about">
+    <h2>About Me</h2>
+
+    <p>
+      I am passionate about web development, trading,
+      and technology. I build projects using HTML, CSS,
+      JavaScript and Java.
+    </p>
+  </section>
+
+  <section id="skills" class="skills">
+
+    <h2>Skills</h2>
+
+    <div class="skill-box">
+      <div class="card">HTML</div>
+      <div class="card">CSS</div>
+      <div class="card">JavaScript</div>
+      <div class="card">Java</div>
+      <div class="card">Python</div>
+    </div>
+
+  </section>
+
+  <section id="projects" class="projects">
+
+    <h2>Projects</h2>
+
+    <div class="project-card">
+      <h3>Snake Game</h3>
+      <p>Modern snake game using JavaScript.</p>
+    </div>
+
+    <div class="project-card">
+      <h3>Password Manager</h3>
+      <p>Notes and password manager project.</p>
+    </div>
+
+  </section>
+
+  <section id="contact" class="contact">
+
+    <h2>Contact</h2>
+
+    <p>Email: yourmail@gmail.com</p>
+
+  </section>
+
+  <script src="script.js"></script>
 
 </body>
-
 </html>
