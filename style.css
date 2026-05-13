@@ -192,7 +192,6 @@ section{
   color:#d6d6ff;
   line-height:1.7;
 }
-
 /* Education */
 
 .education-container{
@@ -286,22 +285,6 @@ section{
   }
 
 }
-/* Mobile */
-
-@media(max-width:768px){
-
-  .edu-card{
-    flex-direction:column;
-    text-align:center;
-  }
-
-  .edu-card img{
-    width:110px;
-    height:110px;
-  }
-
-}
-
 /* Contact */
 
 .contact-wrapper{
